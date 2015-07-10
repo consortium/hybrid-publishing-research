@@ -219,15 +219,16 @@ This is a descriptive view of the file structure:
     │   ├── hybridstrap                     source frontend library
     │   └── jquery                          source frontend library
     ├── bower.json                      ==> bower package file describing the dependencies
+    ├── cache                           ==> temporary cache
     ├── CONTRIBUTING.md                 ==> who did contribute
     ├── createindex.js                  ==> external script gets executed by grunt - creates an index
     ├── css                             ==> source css folder
-    │   ├── bower.css                       dynamic concatenated frontend libraries 
-    │   ├── main.css                        custom css code (edit this!)
+    │   └── main.css                        custom css code (edit this!)
     ├── dist                            ==> docroot for webserver
     │   ├── css                         ==> public css folder
     │   │   └── all.min.css                 dynamic main css files with ALL necessary directives 
     │   ├── docs                        ==> document repository 
+    │   ├── fonts                       ==> fonts repository
     │   ├── gitinfo.json                    a dynamic json file describing git version will be loaded by index.html
     │   ├── index.html                      the index.html
     │   ├── index.json                      a dynamic json file descibing all available documents
@@ -241,10 +242,10 @@ This is a descriptive view of the file structure:
     │       ├── hpc-logoxx.png
     │       └── logo_leuphana-2.png
     ├── extra                           ==> extra folder to distribute 
+    │   ├── researchviewer.service          systemd-script for ubuntu
     │   └── researchviewer.conf             startup-script for ubuntu 
     ├── Gruntfile.js                        Gruntfile with all tasks
     ├── js                              ==> source js folder
-    │   ├── bower.js                        dynamic concatenated frontend libraries
     │   └── consortium-viewer.js            custom js code (edit this!)
     ├── lib                             ==> dynamic folder for grunt bower managed by grunt
     ├── LICENSE                             the license
@@ -291,8 +292,10 @@ This is a descriptive view of the file structure:
 
 ## Roadmap
     
-    0.4 Integrate export module for various targets
-    0.5 Integrate more sophisticated meta data and Dublin Core validation
+    0.0.1 DATA GLOVE: Getting Initial version stable
+    0.0.2 FREE ADVISE: Redo validation, make URLs, data structure and folder layout not as stupid as they are now and more 
+    0.0.3 Completely change viewing logic with new data structure and api delivery
+    0.0.4 Create http-api-grunt-trigger for upgrade and other things
 
 ## To do
     see github issues
