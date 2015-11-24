@@ -20,6 +20,7 @@ css/all-min.css
 dist/css/*
 dist/js/*
 cache
+w3cErrors/*
 dist/fonts/glyphicons-halflings-regular.eot
 dist/fonts/glyphicons-halflings-regular.svg
 dist/fonts/glyphicons-halflings-regular.ttf

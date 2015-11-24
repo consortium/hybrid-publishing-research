@@ -180,10 +180,13 @@ module.exports = function(grunt) {
             options: {
                 relaxerror: [
                     'Bad value X-UA-Compatible for attribute http-equiv on element meta.', 
-                    'Bad value SCHEMA.DC for attribute rel on element link: The string schema.dc is not a registered keyword.',
-                    'Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections.',
-                    'Article lacks heading. Consider using h2-h6 elements to add identifying headings to all articles.',
-                    'This interface to HTML5 document checking is deprecated.'
+                    'Bad value “SCHEMA.DC” for attribute “rel” on element “link”: The string “schema.dc” is not a registered keyword.',
+                    'The Content-Type was “text/html”. Using the HTML parser.',
+                    'Using the schema for HTML with SVG 1.1, MathML 3.0, RDFa 1.1, and ITS 2.0 support.',
+                    'Section lacks heading. Consider using “h2”-“h6” elements to add identifying headings to all sections.',
+                    'Section lacks heading. Consider using “h2”-“h6” elements to add identifying headings to all sections.',
+                    'The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.',
+
                 ],
                 doctype: 'HTML5',
                 reset: true,
@@ -264,7 +267,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks( 'grunt-contrib-jshint' );
     grunt.loadNpmTasks( 'grunt-contrib-uglify' );
     grunt.loadNpmTasks( 'grunt-contrib-watch' );
-    grunt.loadNpmTasks( 'grunt-html-validation' );
+    grunt.loadNpmTasks( 'grunt-w3c-html-validation' );
     grunt.loadNpmTasks( 'grunt-execute' );
     grunt.loadNpmTasks( 'grunt-metaparser' );
     grunt.loadNpmTasks( 'grunt-git' );
@@ -283,7 +286,7 @@ module.exports = function(grunt) {
     grunt.registerTask( 'build', [ 'depbuild' ] );
 
     // Indexing
-    grunt.registerTask( 'index', [ 'newer:validation', 'metaparser', 'execute' ] );
+    grunt.registerTask( 'index', [ 'validation', 'metaparser', 'execute' ] );
 
     // Run tests
     grunt.registerTask( 'test', [ 'jshint', 'qunit', 'validation' ] );
