@@ -145,7 +145,7 @@
 
                 <h3>By Dr Johannes Wilm</h3>
 
-                <p>Whenever files come into play, the question of how they are structured and whether they follow a logic, gives rise to an inter-organizational body. Also in the world of publishing, standards have been an important issue.</p>
+                <p>Whenever files come into play, there is the question of how they are structured and whether that structure follows a logic defined by an inter-organizational body. Also in the world of publishing, standards have been an important issue.</p>
 
                 <p>The discussions about standards have been on different levels of layers of digital abstraction, and the meaning standards have had has shifted through the evolution of digital media. The most recent developments seem to point to a world in which the publishing industry, as the industry concerned with the editing and promulgation of long-format texts, will be a minor part in a larger Web content industry. This change will have an impact on the meaning of standards for digital publishing to such a degree that the need for continuing the development of certain standards will be called into question altogether.</p>
 
@@ -153,31 +153,36 @@
 
                 <p>From the 1960s to the 1980s, the <em>American Standard Code for Information Interchange</em> (ASCII) was under development. As the name suggests, it focused on the US, and it provided 128 characters needed for English writing. It was the most common file encoding standard until 2008, when it was replaced by <em>Unicode Transformation Format-8</em> (UTF-8)<a href="#sdendnote1sym" name="sdendnote1anc"><sup>1</sup></a>. Unicode, developed since the 1980s, provides for more than 1.1 million characters.</p>
 
-                <p>However, before Unicode digital content could be created in languages other than US American English. In part this was made possible through the creation of ASCII-alike standards for specific languages, such as the ISO 8859-1 standard commonly used in many Western European languages.</p>
+                <p>Even before Unicode, digital content could be created in languages other than US American English. In part this was made possible through the creation of ASCII-alike standards for specific languages, such as the ISO 8859-1 standard commonly used in many Western European languages.</p>
 
                 <p>Another method was not to use the character encoding of a file for certain characters. For example, in an HTML 2.0 file the German/Swedish <em>Ö</em>-character can be represented by the character combination <em>&amp;Ouml;</em>.</p>
 
-                <p>Another reason for the shift was the advent of graphic user interfaces (GUI). The contents of text files needed to accommodate graphic styling and character encoding could not deal with font sizes and bold text.</p>
-
-                <p>This movement to a higher level of abstraction meant that standards needed to be interpreted by programs. Reading the characters contained in a file according to an encoding is a feature available either through a programming language itself or a generic library available to any program written in that language. In contrast, application teams would have to build HTML interpretation capabilities.</p>
-
                 <h3>Rich text file standards</h3>
 
-                <p>The earliest file format describing styling information, such as LaTeX from 1984, were designed to be readable by non-graphical text applications.</p>
+                <p>When computers started dealing not only with textual content, but also styling, there was a shift in terms of what it meant for a file to follow a standard. Instead of just having to be encoded with a specific character encoding, files now needed to contain specific contents in a certain order.</p>
 
-                <p>The<em> Rich Text Format</em> (RTF) standard was introduced in 1987 with Microsoft Word 3.0 for Macintosh, but was less readable in non-graphic editors. Text editors could still be used for minor fixes, as the file was encoded in ASCII.</p>
+                <p>The earliest file format describing styling information, such as LaTeX (1984), were designed to be readable and editable by non-graphical text applications.</p>
 
-                <p>In recent years, word processor formats are the <em>OpenDocument Text</em> (ODT), released in 2005 and the native format by LibreOffice Writer, and the Microsoft Word's <em>Office Open XML</em> (OOXML) from 2006. They are similar to RTF in that minor fixes can be done by hand and that the file standard interpretation is taken care of by a program (a word processor). The main difference is that they are files that are wrapped in zip files to allow for the inclusion of graphics and alike.</p>
+                <p>The ability to directly edit the files "by hand" changed bit by bit. The <em>Rich Text Format</em> (RTF, 1987)<a href="#sdendnote2sym" name="sdendnote2anc"><sup>2</sup></a> was less readable in non-graphic editors. Text editors could still be used for minor fixes, as the file is encoded in ASCII and it can therefore be edited in most commandline text editors.</p>
 
-                <p>Files for rich text content have so far focused either on being displayed or edited. While RTF, ODT and OOXML are mainly used by graphic editing applications, the <em>Hypertext Markup Language</em> (HTML), released in 1993, and the <em>Portable Document Format</em> (PDF), released in 1993 as a proprietary standard and released in 2008 as an open standard, focus on display.</p>
+                <p>Recent word processor formats such <em>OpenDocument Text</em> (ODT, 2005)<a href="#sdendnote3sym" name="sdendnote3anc"><sup>3</sup></a> and <em>Office Open XML</em> (OOXML, 2006)<a href="#sdendnote4sym" name="sdendnote4anc"><sup>4</sup></a> cannot as easily be edited by hand as RTF. The main difference is that they are files that are wrapped in zip files to allow for the inclusion of graphics and alike.</p>
 
-                <p>PDF files can seldom be edited in a pure text editor. While HTML files were initially simple, most current HTML files use so many different tags and featured that editing with a text editor is cumbersome.</p>
+                <p>While plain text files could be used both for editing and displaying files, file standards for richtext files have either focused on editing or being displayed. While RTF, ODT and OOXML are mainly used by graphic editing applications, the <em>Hypertext Markup Language</em> (HTML, 1993), and the <em>Portable Document Format</em> (PDF, 1993/2008)<a href="#sdendnote5sym" name="sdendnote5anc"><sup>5</sup></a> focus on display.</p>
 
-                <p>The development of rich text, text formats, can be summarized as starting with text files that contained basic additional character and styling information editable by a skilled editor, to files that were so full of styling information that only complex programs with massive development teams behind them could interpret/write them correctly.</p>
+                <p>PDF files can seldom be edited in a pure text editor. And also formats that once did provide for manual editing have become more difficult to handle in recent versions. While HTML files were initially simple, most current HTML files use so many different tags and featured that editing with a text editor is cumbersome.</p>
+
+                <p>The development of rich text text formats, can be summarized as starting with text files that contained basic additional character and styling information editable by a skilled editor, to files that were so full of styling information that only complex programs with massive development teams behind them could interpret/write them correctly.</p>
+
+                <p>One reason for the shift was the advent of graphic user interfaces (GUI). The type of text files that existed could not explain the type of graphic styling users expected; files that just followed character encoding standards lacked ways of specifying font sizes and bold text.</p>
+
+                <p>The shift meant that standardized filed needed to be interpreted by programs. Reading the characters contained in a file according to an encoding is a feature available either through a programming language itself or a generic library available to any program written in that language. In contrast, application teams would have to build HTML interpretation capabilities.</p>
+
 
                 <h3>The publishing industry's own file formats</h3>
 
-                <p>These file formats can all be used both for long texts that the traditional publishing industry dealt with, and for smaller texts written by lay people within personal communications.</p>
+                <p>With the advent of modern word processors installed on most computers, the publishing industry has come to rely on their authors using these programs for content production.</p>
+                
+                <p>And indeed, these programs can all be used both for long texts that the traditional publishing industry dealt with, and for smaller texts written by lay people within personal communications, and the file formats can express a lot of the styling information needed for books.</p>
 
                 <p>Access to these generic file formats and programs has been an advantage for an industry that otherwise would have had to invest in their own tools. But it has also meant that the standards and programs have not been perfect matches.</p>
 
@@ -189,27 +194,27 @@
 
                 <h3>More abstractions or less standardization?</h3>
 
-                <p>As ebook reading devices become more powerful and morphed with tablets, it seems that new ebook readers will be common open source browser engines that interpret an EPUB. This means more resources for development teams and less bugs in everything that EPUBs have in common with HTML files. But EPUBs need to do more: pagination, page numbers, table of contents, display metadata, etc.</p>
-
-                <p>This can be done through modifications of the browser engines. A disadvantage with this approach is that these patches will need to be maintained. A second option is the use the browser's JavaScript engine and <em>Cascading Style Sheets</em> (CSS) interpreter to add features.</p>
-
-                <p>This gives a new way of dealing with standards: Standards are now in part interpreted by higher level scripting languages.</p>
+                <p>As ebook reading devices become more powerful and morphed with tablets, it has been predicted that the next generation of ebook reading programs will contain open source browser engines that interpret an EPUB. If the programs could make use of browser engines for most things, it would mean they would have access to larger development team for that part and therefore less bugs in everything that EPUBs have in common with HTML files.</p>
+                
+                <p>But EPUBs need to do more than browsers in some aspects: pagination, page numbers, table of contents, display metadata, etc. Such extra functionality could be provided through modifications of the browser engines. A disadvantage with such an approach would be that those making such changes to the engine would end up having to maintain patches to the browser engine source code apart from the engine's development team. Maintaining patches to third party software usually means a lot of extra work.</p> 
+                
+                <p>A second option would be to use the browser's JavaScript engine and <em>Cascading Style Sheets</em> (CSS) interpreter to add such features. This would mean a piece of JavaScript would have to interpret (a part of) the file format (in this case relating to pagination) which would now open for a new way of dealing with standards: It is now a piece of scripting language running inside the program that deals with the standard. Vivliostyle.js is trying that exact approach for more complex print-related styling information that browsers cannot handle by themselves.</p>
 
                 <p>If this approach gains more support, it will signify a shift almost as fundamental as the movement from file encoding standards to file type standards interpreted by individual programs.</p>
 
                 <p>Similarly, access to lower level features in browsers could allow for the creation of other more specific tools for the publishing industry, including semantic content editors, such as Fidus Writer, and HTML/CSS renderers that add page related features for print, such as Vivliostyle.js.</p>
 
-                <p>At the same time, the need for standards is cast into doubt. Scripting languages do not have to be compiled and can be programmed rapidly. Programs written in script languages can be updated every time a user goes to a specific website. So is there even a need to have a common standard for the files they read?</p>
-
-                <p>There seem to be some doubts whether the W3C Digital Publishing Interest Group (DPUB-IG) should go ahead with the next version of the EPUB standard, labeled EPUB-WEB, or whether each publisher simply can create their own JavaScript app to display content that is written in the companies own closed or open format.</p>
+                <p>At the same time, the need for standards is cast into doubt. Scripting languages do not have to be compiled and can be programmed rapidly. Programs written in script languages can be updated every time a user goes to a specific website. So is there even a need to have a common standard for the files they read? A few months ago there seemed to be some doubts whether the W3C Digital Publishing Interest Group (DPUB-IG) should go ahead with the next version of the EPUB standard, labeled EPUB-WEB, or whether each publisher simply can create their own JavaScript app to display content that is written in the companies own closed or open format.</p>
 
                 <h3>Concluding remarks</h3>
+                
+                <p>Whether or not standards for script-interpreted are important is a discussion that has not been concluded so far.</p>
 
                 <p>Not working with a standard has some advantages, notably that each publishing application can be more rapidly developed, inventing new format features as they are needed and implemented and not having to worry about implementing features few users will use only to comply with the standard.</p>
 
-                <p>In the favour of standards is a potentially higher longevity of content. Related to this is the rapid development of new technology combined with the fact that valuable long-form texts often continue to be valuable several centuries after they were written. Also interoperability between different file reading system is better assured through standards.</p>
+                <p>In the favor of standards is a potentially higher longevity of content. Related to this is the rapid development of new technology combined with the fact that valuable long-form texts often continue to be valuable several centuries after they were written. Also interoperability between different file reading system is better assured through standards.</p>
 
-                <p>The arguments are not new, but their relevance may have shifted given the rapid development and updating of JavaScript based programs. A possible compromise could lie in the terms laid out in the <em>The Extensible Web Manifesto<a href="#sdendnote2sym" name="sdendnote2anc"><sup>2</sup></a></em>, a 2013 document signed by several of the leading participants in W3C standards groups that calls for the creation of new standards by giving access to lower level features to JavaScript developers, who then implement features as the standards continue to be updated. Once a particular feature gains maturity and is in general use, the code is moved into the lower level program itself. This would allow both for the flexibility of JavaScript based development and the stability that an agreed standard can provide.</p><br>
+                <p>The arguments are not new, but their relevance may have shifted given the rapid development and updating of JavaScript based programs. A possible compromise could lie in the terms laid out in the <em>The Extensible Web Manifesto<a href="#sdendnote6sym" name="sdendnote6anc"><sup>6</sup></a></em>, a 2013 document signed by several of the leading participants in W3C standards groups that calls for the creation of new standards by giving access to lower level features to JavaScript developers, who then implement features as the standards continue to be updated. Once a particular feature gains maturity and is in general use, the code is moved into the lower level program itself. This would allow both for the flexibility of JavaScript based development and the stability that an agreed standard can provide.</p><br>
 
                 <p>Dr Johannes Wilm</p>
 
@@ -232,7 +237,23 @@
                 </div>
 
                 <div id="sdendnote2">
-                <p><a href="#sdendnote2anc" name="sdendnote2sym">2</a> The Extensible Web Manifesto <a href="https://extensiblewebmanifesto.org/">https://extensiblewebmanifesto.org/</a></p>
+                <p><a href="#sdendnote2anc" name="sdendnote2sym">2</a>The <i>Rich Text Format</i> (RTF, 1987) was introduced with Microsoft Word 3.0 for Macintosh.</p>
+                </div>
+                
+                <div id="sdendnote3">
+                <p><a href="#sdendnote3anc" name="sdendnote3sym">3</a>The <i>OpenDocument Text</i> (ODT, 2005) format is the native format of LibreOffice Writer.</p>
+                </div>
+                
+                <div id="sdendnote4">
+                <p><a href="#sdendnote4anc" name="sdendnote4sym">4</a>The <i>Office Open XML</i> (OOXML, 2006) format is the native format of Microsoft Word.</p>
+                </div>
+                
+                <div id="sdendnote5">
+                <p><a href="#sdendnote5anc" name="sdendnote5sym">5</a>The <i>Portable Document Format</i> (PDF) was released as a proprietary format in 1993 and an open standard in 2008.</p>
+                </div>
+                
+                <div id="sdendnote6">
+                <p><a href="#sdendnote6anc" name="sdendnote6sym">6</a> The Extensible Web Manifesto <a href="https://extensiblewebmanifesto.org/">https://extensiblewebmanifesto.org/</a></p>
                 </div>
                     </section>
 
@@ -249,21 +270,21 @@
 
                 <blockquote>[READ+WRITE]DIGITAL&nbsp;: INFRASTRUCTURES AT STAKE</blockquote>
 
-                <p>In 2013, I co-initiated a series of professional meetings on called [Read+Write]digital upon the invitation of a dedicated books and reading service, emanating from a regional authority of Pays de la Loire, France<a href="#sdendnote3sym" name="sdendnote3anc"><sup>1</sup></a>. Together with Guénaël Boutouillet, book mediator, we had the chance to train and push forward a «&nbsp;new event format&nbsp;» mainly addressed to books professionals (publishers, authors, librarians, cultural operators and students). Usually when attending a conference or seminar on digital mutation in publishing, one could be informed about the latest development and hear a wide range of new technical terms, and so, in sum, gain knowledge; but one is left, in the end, with no handy way to practice using these promising tools.</p>
+                <p>In 2013, I co-initiated a series of professional meetings on called [Read+Write]digital upon the invitation of a dedicated books and reading service, emanating from a regional authority of Pays de la Loire, France<a href="#sdendnote7sym" name="sdendnote7anc"><sup>1</sup></a>. Together with Guénaël Boutouillet, book mediator, we had the chance to train and push forward a «&nbsp;new event format&nbsp;» mainly addressed to books professionals (publishers, authors, librarians, cultural operators and students). Usually when attending a conference or seminar on digital mutation in publishing, one could be informed about the latest development and hear a wide range of new technical terms, and so, in sum, gain knowledge; but one is left, in the end, with no handy way to practice using these promising tools.</p>
 
-                <p>Based on this observation, we conceived a simple «&nbsp;template&nbsp;», combining morning conferences and afternoon workshops, relating topics discussed in conferences and activating them through workshops. Proposed in a collaborative and nomadic setup, we curated four meetings during the year 2013, starting and ending in an auditorium and classroom (University of La Roche-sur-Yon), hosted in between in a public library (Médiathèque Diderot, Rezé) and an art center (Maison des Arts, Saint-Herblain). Conferences were filmed and archived on a dedicated blog<a href="#sdendnote4sym" name="sdendnote4anc"><sup>2</sup></a>; the same blog was rerouted from its communicational function, to be used for the workshops as a «&nbsp;digital writing’s laboratory&nbsp;» or (now, looking back) as a sandbox<a href="#sdendnote5sym" name="sdendnote5anc"><sup>3</sup></a>.</p>
+                <p>Based on this observation, we conceived a simple «&nbsp;template&nbsp;», combining morning conferences and afternoon workshops, relating topics discussed in conferences and activating them through workshops. Proposed in a collaborative and nomadic setup, we curated four meetings during the year 2013, starting and ending in an auditorium and classroom (University of La Roche-sur-Yon), hosted in between in a public library (Médiathèque Diderot, Rezé) and an art center (Maison des Arts, Saint-Herblain). Conferences were filmed and archived on a dedicated blog<a href="#sdendnote8sym" name="sdendnote8anc"><sup>2</sup></a>; the same blog was rerouted from its communicational function, to be used for the workshops as a «&nbsp;digital writing’s laboratory&nbsp;» or (now, looking back) as a sandbox<a href="#sdendnote9sym" name="sdendnote9anc"><sup>3</sup></a>.</p>
 
                 <blockquote>[READ+WRITE]DIGITAL&nbsp;: OPEN RECORD AND COLLABORATIVE DESIGN</blockquote>
 
                 <p>Referring to sandbox in a gaming contextualization, applied to our case, this means participants would access the blog afterwards, to rewrite, update and proofread their production. We tried to build an «&nbsp;open learning environment&nbsp;», where participants could join whenever they want, without feeling behind because of not having followed the whole cycle. We would talk about the Internet history and evolution of libraries, copy-culture and the commons, electronic and algorithmic literature, and last but not least, digital publishing and the making of e-Books. We had in mind, indeed, to produce an electronic publication titled ‘Lire+Écrire’, instead of a «&nbsp;symposium report&nbsp;» traditionally in print or in PDF format. An EPUB – or the idea of a «&nbsp;liquid book&nbsp;» – perfectly matched the networked cycle we had designed.</p>
 
-                <p>The last and final meeting focused on digital publishing, with the participation of young digital craftsmen, Chapal&amp;Panoz studio<a href="#sdendnote6sym" name="sdendnote6anc"><sup>4</sup></a>, who delivered a tablet-only unconference. Oh, what I did not mention, working on bridging topics, we would, in ones and twos, invite the lecturers to think and run the afternoon workshop with us. That’s what we did with Roxane Lecomte &amp; Jiminy Panoz (as we considered to work with them on the EPUB). We questioned the format and contents together with the participants by opening up the design process: in a technical (lift the hood, looking at how the text «&nbsp;flows&nbsp;» in Sigil software), editorialized approach (calling for a close-reading of the blog and discussing, for instance, the table of contents without thinking anymore in terms of pagination). This is where we talked about Creative Commons license issues as well, as a «&nbsp;sustainable&nbsp;» condition for this e-Book, to flow freely among peers, and hopefully, a wider audience.</p>
+                <p>The last and final meeting focused on digital publishing, with the participation of young digital craftsmen, Chapal&amp;Panoz studio<a href="#sdendnote10sym" name="sdendnote10anc"><sup>4</sup></a>, who delivered a tablet-only unconference. Oh, what I did not mention, working on bridging topics, we would, in ones and twos, invite the lecturers to think and run the afternoon workshop with us. That’s what we did with Roxane Lecomte &amp; Jiminy Panoz (as we considered to work with them on the EPUB). We questioned the format and contents together with the participants by opening up the design process: in a technical (lift the hood, looking at how the text «&nbsp;flows&nbsp;» in Sigil software), editorialized approach (calling for a close-reading of the blog and discussing, for instance, the table of contents without thinking anymore in terms of pagination). This is where we talked about Creative Commons license issues as well, as a «&nbsp;sustainable&nbsp;» condition for this e-Book, to flow freely among peers, and hopefully, a wider audience.</p>
 
                 <blockquote>[READ+WRITE]DIGITAL&nbsp;: ONLINE AND OFFLINE</blockquote>
 
-                <p>Under the editorial coordination, this first experience with digital publishing was purposely a meta-minded one: [Read+Write]digital<a href="#sdendnote7sym" name="sdendnote7anc"><sup>5</sup></a> is a self-reflective object – an electronic publication on networked publishing, reading and writing. Although what follows is anecdotal, it is revealing about the workflow. I carried out work (from Brussels) with Chapal&amp;Panoz (Barcelona-based) studio, the e-Book was published by the French publisher Publie.net (with the director living in Bangkok) for a backer in Nantes. It has worked pretty well. And for the first time, I didn’t face any printer's deadline. This was also the weirdest moment: it was hard to accept the work is «&nbsp;finished&nbsp;» when the ending has almost no tangible effect (like receiving full cardboard boxes, when you are managing your new stock).</p>
+                <p>Under the editorial coordination, this first experience with digital publishing was purposely a meta-minded one: [Read+Write]digital<a href="#sdendnote11sym" name="sdendnote11anc"><sup>5</sup></a> is a self-reflective object – an electronic publication on networked publishing, reading and writing. Although what follows is anecdotal, it is revealing about the workflow. I carried out work (from Brussels) with Chapal&amp;Panoz (Barcelona-based) studio, the e-Book was published by the French publisher Publie.net (with the director living in Bangkok) for a backer in Nantes. It has worked pretty well. And for the first time, I didn’t face any printer's deadline. This was also the weirdest moment: it was hard to accept the work is «&nbsp;finished&nbsp;» when the ending has almost no tangible effect (like receiving full cardboard boxes, when you are managing your new stock).</p>
 
-                <p>That’s exactly what interests me now that the work is behind me (without a paper and cardboard copy at home): it is always available, accessible, shareable. From the last statistics on publie.net, [Read+Write]digital has been downloaded 1829 times. It is for sure more than we would have expected if we had chosen a publication in print. And I particularly appreciate always having a copy «&nbsp;within easy reach&nbsp;». I’ve been working recently with offline networks, especially the LibraryBox project<a href="#sdendnote8sym" name="sdendnote8anc"><sup>6</sup></a>. This is where and how I keep on spreading this resourceful e-Book among librarians as well as computer scientists, graphic designers and digital culture mediators.</p><br>
+                <p>That’s exactly what interests me now that the work is behind me (without a paper and cardboard copy at home): it is always available, accessible, shareable. From the last statistics on publie.net, [Read+Write]digital has been downloaded 1829 times. It is for sure more than we would have expected if we had chosen a publication in print. And I particularly appreciate always having a copy «&nbsp;within easy reach&nbsp;». I’ve been working recently with offline networks, especially the LibraryBox project<a href="#sdendnote12sym" name="sdendnote12anc"><sup>6</sup></a>. This is where and how I keep on spreading this resourceful e-Book among librarians as well as computer scientists, graphic designers and digital culture mediators.</p><br>
 
                 <p>Catherine Lenoble – author, digital culture mediator, <a href="http://litteraturing.net/">http://litteraturing.net</a></p>
 
@@ -281,28 +302,28 @@
             <section id="footnotes02">
                 <h3>Notes:</h3>
 
-                <div id="sdendnote3">
-                <p><a href="#sdendnote3anc" name="sdendnote3sym">1</a> Original title in french [Lire+Écrire]numérique: the cycle and publication were made possible thanks to the Centre Régional du Livre de la Région Pays de la Loire, France,  restructured and renamed Mobilis in 2014: <a href="http://www.mobilis-paysdelaloire.fr/">http://www.mobilis-paysdelaloire.fr/</a></p>
-                </div>
-
-                <div id="sdendnote4">
-                <p><a href="#sdendnote4anc" name="sdendnote4sym">2</a> See <a href="https://lirecrirenumerique.wordpress.com/">https://lirecrirenumerique.wordpress.com/</a></p>
-                </div>
-
-                <div id="sdendnote5">
-                <p><a href="#sdendnote5anc" name="sdendnote5sym">3</a> «&nbsp;A sandbox is a kind of game in which minimal character limitations are placed on the gamer, allowing the gamer to roam and change a virtual world at will.(…) Instead of featuring segmented areas or numbered levels, a sandbox game usually occurs in a “world” to which the gamer has full access from start to finish.&nbsp;» (src: Techopedia, <a href="https://www.techopedia.com/">https://www.techopedia.com/</a>).</p>
-                </div>
-
-                <div id="sdendnote6">
-                <p><a href="#sdendnote6anc" name="sdendnote6sym">4</a> See <a href="http://chapalpanoz.com/">http://chapalpanoz.com/</a></p>
-                </div>
-
                 <div id="sdendnote7">
-                <p><a href="#sdendnote7anc" name="sdendnote7sym">5</a> Lire+Écrire publication. Free e-Book released under a CC-BY-NC-SA license, with the contributions of Guénaël Boutouillet, Olivier Ertzscheid, Antoine Fauchié, Roxane Lecomte, Lionel Maurel, An Mertens, Laurent Neyssensas and Jiminy Panoz. Access &amp; download the publication in the following formats (EPUB – Kindle Mobipocket – Web version): <a href="http://www.publie.net/livre/lireecrire/">http://www.publie.net/livre/lireecrire/</a></p>
+                <p><a href="#sdendnote7anc" name="sdendnote7sym">1</a> Original title in french [Lire+Écrire]numérique: the cycle and publication were made possible thanks to the Centre Régional du Livre de la Région Pays de la Loire, France,  restructured and renamed Mobilis in 2014: <a href="http://www.mobilis-paysdelaloire.fr/">http://www.mobilis-paysdelaloire.fr/</a></p>
                 </div>
 
                 <div id="sdendnote8">
-                <p><a href="#sdendnote8anc" name="sdendnote8sym">6</a> LibraryBox is a fork of Piratebox for the TP-Link MR 3020, customized for educational, library, and other needs, conceived by Jason Griffey. It is an open source, portable digital file distribution tool based on inexpensive hardware that enables delivery of information to individuals off the grid. <a href="http://librarybox.us/">http://librarybox.us/</a></p>
+                <p><a href="#sdendnote8anc" name="sdendnote8sym">2</a> See <a href="https://lirecrirenumerique.wordpress.com/">https://lirecrirenumerique.wordpress.com/</a></p>
+                </div>
+
+                <div id="sdendnote9">
+                <p><a href="#sdendnote9anc" name="sdendnote9sym">3</a> «&nbsp;A sandbox is a kind of game in which minimal character limitations are placed on the gamer, allowing the gamer to roam and change a virtual world at will.(…) Instead of featuring segmented areas or numbered levels, a sandbox game usually occurs in a “world” to which the gamer has full access from start to finish.&nbsp;» (src: Techopedia, <a href="https://www.techopedia.com/">https://www.techopedia.com/</a>).</p>
+                </div>
+
+                <div id="sdendnote10">
+                <p><a href="#sdendnote10anc" name="sdendnote10sym">4</a> See <a href="http://chapalpanoz.com/">http://chapalpanoz.com/</a></p>
+                </div>
+
+                <div id="sdendnote11">
+                <p><a href="#sdendnote11anc" name="sdendnote11sym">5</a> Lire+Écrire publication. Free e-Book released under a CC-BY-NC-SA license, with the contributions of Guénaël Boutouillet, Olivier Ertzscheid, Antoine Fauchié, Roxane Lecomte, Lionel Maurel, An Mertens, Laurent Neyssensas and Jiminy Panoz. Access &amp; download the publication in the following formats (EPUB – Kindle Mobipocket – Web version): <a href="http://www.publie.net/livre/lireecrire/">http://www.publie.net/livre/lireecrire/</a></p>
+                </div>
+
+                <div id="sdendnote12">
+                <p><a href="#sdendnote12anc" name="sdendnote12sym">6</a> LibraryBox is a fork of Piratebox for the TP-Link MR 3020, customized for educational, library, and other needs, conceived by Jason Griffey. It is an open source, portable digital file distribution tool based on inexpensive hardware that enables delivery of information to individuals off the grid. <a href="http://librarybox.us/">http://librarybox.us/</a></p>
                 </div>
 
                       </section>
@@ -315,7 +336,7 @@
 
                             <p>As a contribution to a research dossier on different views on standards in digital publishing, this paper highlights the point of view of the academic library. First, (1) I will outline the transformation of the publishing process and its impact on libraries. Then, (2) I will present approaches to the standardization of publishing services offered by libraries, and finally, (3) I will point to further challenges.</p>
 
-                            	<h3>1.) The Transformation of Publishing and its Impact on Libraries<a href="#sdendnote9sym" name="sdendnote9anc"><sup>1</sup></a></h3>
+                            	<h3>1.) The Transformation of Publishing and its Impact on Libraries<a href="#sdendnote13sym" name="sdendnote13anc"><sup>1</sup></a></h3>
 
                             <p>Traditionally, academic libraries dealt with published materials, but were not involved in the publishing process. The classic publishing life-cycle was characterized by a clear division of roles between the actors: the author, the publisher, the library, and the reader (and potential author) at the end (and new beginning) of the cycle - each one had their own clearly defined task areas. In the classic publishing process, the library acted as a customer for academic publications, made scholarly publications available, increased their use by indexing them, and finally took care of their long-term preservation.</p>
 
@@ -325,13 +346,13 @@
 
                             <h3>2.) Developing Standards for Publishing Services of Libraries</h3>
 
-                            <p>Today, most libraries in higher education institutions offer publishing services, usually in cooperation with IT departments and Media Services. As an example, I’ll briefly introduce the document and publication server Edoc of the Humboldt University Berlin.<sup> <a href="#sdendnote10sym" name="sdendnote10anc"><sup>2</sup></a> </sup>With Edoc, university writings can be uploaded and be made available for the public. As the Edoc guidelines point out<a href="#sdendnote11sym" name="sdendnote11anc"><sup>3</sup></a>, the document and publication server offers an organizational and technical framework for the electronic publication of scholarly documents to all members of the university. Within the framework of the joint offering of the Computer and Media Service (CMS) and the University Library, highly relevant scholarly documents are provided for teaching and research, according to quality standards. The Edoc Server serves as a technological platform for the realization of the ideas formulated in the Open Access Declaration of Humboldt University<a href="#sdendnote12sym" name="sdendnote12anc"><sup>4</sup></a>. Each electronic document gets a persistent identifier (URN) and is indexed by national and international library catalogues, search engines and other reference tools. Specific measures like digital signatures and time stamps are taken in order to protect the documents against falsification and deletion, thus ensuring their authenticity and integrity. Further, the Edoc services ensure the long-term preservation of the electronic documents. The operation and further development of the Edoc server are integrated into national and international initiatives and projects like the DINI network<a href="#sdendnote13sym" name="sdendnote13anc"><sup>5</sup></a>, the Confederation of Open Access Repositories (COAR)<a href="#sdendnote14sym" name="sdendnote14anc"><sup>6</sup></a>, the Networked Digital Library of Theses and Dissertations (NDLTD)<a href="#sdendnote15sym" name="sdendnote15anc"><sup>7</sup></a>, or the Open Archives Initiative (OAI)<a href="#sdendnote16sym" name="sdendnote16anc"><sup>8</sup></a>. In order to highlight some areas of standardization, I want to refer to the DINI Certificate 2013 for Open Access Repositories and Publication Services.<a href="#sdendnote17sym" name="sdendnote17anc"><sup>9</sup></a></p>
+                            <p>Today, most libraries in higher education institutions offer publishing services, usually in cooperation with IT departments and Media Services. As an example, I’ll briefly introduce the document and publication server Edoc of the Humboldt University Berlin.<sup> <a href="#sdendnote14sym" name="sdendnote14anc"><sup>2</sup></a> </sup>With Edoc, university writings can be uploaded and be made available for the public. As the Edoc guidelines point out<a href="#sdendnote15sym" name="sdendnote15anc"><sup>3</sup></a>, the document and publication server offers an organizational and technical framework for the electronic publication of scholarly documents to all members of the university. Within the framework of the joint offering of the Computer and Media Service (CMS) and the University Library, highly relevant scholarly documents are provided for teaching and research, according to quality standards. The Edoc Server serves as a technological platform for the realization of the ideas formulated in the Open Access Declaration of Humboldt University<a href="#sdendnote16sym" name="sdendnote16anc"><sup>4</sup></a>. Each electronic document gets a persistent identifier (URN) and is indexed by national and international library catalogues, search engines and other reference tools. Specific measures like digital signatures and time stamps are taken in order to protect the documents against falsification and deletion, thus ensuring their authenticity and integrity. Further, the Edoc services ensure the long-term preservation of the electronic documents. The operation and further development of the Edoc server are integrated into national and international initiatives and projects like the DINI network<a href="#sdendnote17sym" name="sdendnote17anc"><sup>5</sup></a>, the Confederation of Open Access Repositories (COAR)<a href="#sdendnote18sym" name="sdendnote18anc"><sup>6</sup></a>, the Networked Digital Library of Theses and Dissertations (NDLTD)<a href="#sdendnote19sym" name="sdendnote19anc"><sup>7</sup></a>, or the Open Archives Initiative (OAI)<a href="#sdendnote20sym" name="sdendnote20anc"><sup>8</sup></a>. In order to highlight some areas of standardization, I want to refer to the DINI Certificate 2013 for Open Access Repositories and Publication Services.<a href="#sdendnote21sym" name="sdendnote21anc"><sup>9</sup></a></p>
 
 
                             	<h4>The DINI Certificate</h4>
 
 
-                            <p>The German Initiative for Network Information DINI e.V. was founded by a consortium of German University Media Centers, the German Library Association dbv e.V., and an association of German University Computing Centers. DINI aims to enhance information and communication services, and therefore to support information infrastructures in higher education institutions. Since 2004, has DINI offered the certification of document and publication servers. The certification process follows the minimum requirements and recommendations mentioned in the certificate.<a href="#sdendnote18sym" name="sdendnote18anc"><sup>10</sup></a> The list of criteria includes eight topics:</p><br>
+                            <p>The German Initiative for Network Information DINI e.V. was founded by a consortium of German University Media Centers, the German Library Association dbv e.V., and an association of German University Computing Centers. DINI aims to enhance information and communication services, and therefore to support information infrastructures in higher education institutions. Since 2004, has DINI offered the certification of document and publication servers. The certification process follows the minimum requirements and recommendations mentioned in the certificate.<a href="#sdendnote22sym" name="sdendnote22anc"><sup>10</sup></a> The list of criteria includes eight topics:</p><br>
 
                             <ol>
                             	<li>
@@ -360,21 +381,21 @@
                             	</li>
                             </ol>
 
-                            <p>Beyond these criteria, the certificate provides information about the certification process<a href="#sdendnote19sym" name="sdendnote19anc"><sup>11</sup></a> as well as an appendix with the interface guidelines of the Open Archives Initiative. OAI develops and promotes interoperability standards that aim to facilitate the efficient dissemination of content.</p>
+                            <p>Beyond these criteria, the certificate provides information about the certification process<a href="#sdendnote23sym" name="sdendnote23anc"><sup>11</sup></a> as well as an appendix with the interface guidelines of the Open Archives Initiative. OAI develops and promotes interoperability standards that aim to facilitate the efficient dissemination of content.</p>
 
                             	<h4>Standards for Authors</h4>
 
-                            <p>At this point, I'd like to point to an aspect of the DINI criteria which had not been an issue in the traditional publishing process: the co-responsibility of the author for the indexing and long-term accessibility of his/her work. The certificate not only proposes that authors add abstracts and assign keywords to their work, but also that they use non-proprietary, open file formats like PDF/A, ODF, or TXT for writing, in order to facilitate long-term availability.<a href="#sdendnote20sym" name="sdendnote20anc"><sup>12</sup></a></p>
+                            <p>At this point, I'd like to point to an aspect of the DINI criteria which had not been an issue in the traditional publishing process: the co-responsibility of the author for the indexing and long-term accessibility of his/her work. The certificate not only proposes that authors add abstracts and assign keywords to their work, but also that they use non-proprietary, open file formats like PDF/A, ODF, or TXT for writing, in order to facilitate long-term availability.<a href="#sdendnote24sym" name="sdendnote24anc"><sup>12</sup></a></p>
 
-                            <p>To this, Peter Schirmbacher, the Director of the CMS at Humboldt Universität Berlin adds another requirement for authors (Schirmbacher 2009, 17f): He urgently recommends that formatted documents be created using machine-readable DTD (document type description) markup languages based on SGML or XML<a href="#sdendnote21sym" name="sdendnote21anc"><sup>13</sup></a>. As he argues, the migration and preservation of documents through recurrent hardware and software changes and updates can be much better ensured if the files are non-proprietary (thus, open source) and machine-readable. Moreover, markup languages allow for more detailed indexing and better retrieval, since not only author, title, and keywords can be indexed, but also chapters, headlines, illustrations, citations and references, as well as descriptive metadata.</p>
+                            <p>To this, Peter Schirmbacher, the Director of the CMS at Humboldt Universität Berlin adds another requirement for authors (Schirmbacher 2009, 17f): He urgently recommends that formatted documents be created using machine-readable DTD (document type description) markup languages based on SGML or XML<a href="#sdendnote25sym" name="sdendnote25anc"><sup>13</sup></a>. As he argues, the migration and preservation of documents through recurrent hardware and software changes and updates can be much better ensured if the files are non-proprietary (thus, open source) and machine-readable. Moreover, markup languages allow for more detailed indexing and better retrieval, since not only author, title, and keywords can be indexed, but also chapters, headlines, illustrations, citations and references, as well as descriptive metadata.</p>
 
-                            <p>More standards for long-term archiving are developed and promoted by the nestor competence network for long-term archiving.<a href="#sdendnote22sym" name="sdendnote22anc"><sup>14</sup></a></p>
+                            <p>More standards for long-term archiving are developed and promoted by the nestor competence network for long-term archiving.<a href="#sdendnote26sym" name="sdendnote26anc"><sup>14</sup></a></p>
 
                             <p>To summarise, my presentation has addressed the ongoing transformation of the publishing process and the changing role of the library within it. Using the example of the publication and document server at Humboldt University Berlin, I addressed new publication models and forms of cooperation. Although there is still a lack of established standards for publishing services (Schirmbacher 2009), important approaches have been made, as shown by means of an important contribution from Germany, the DINI Certificate.</p>
 
                             <h3>3. Further Challenges</h3>
 
-                            <p>Some crucial issues of publishing like the integration of multimedia have not been tackled in my presentation. But as Raffael Ball (2013) points out, there are much more fundamental challenges to publishing. As Ball elaborates, not just publishing but scholarly communication as a whole has changed fundamentally. He stresses two points in particular: the dissolution of the boundaries between informal and formal (ie published) scholarly communication, which have become a continuous process. To this I’d like to add that there are many different modes of consumption and dissemination of research today: interactive charts, linked data blogs, social media (including Facebook, LinkedIn, Academia.edu, and ReseachGate), visualisations and more.<a href="#sdendnote23sym" name="sdendnote23anc"><sup>15</sup></a> This doesn’t exactly facilitate the selection and aggregration of “relevant” materials, speaking from the perspective of libraries. The second point Ball stresses is the development from static to dynamic (or fluid) documents. Ball actually sees the traditional mission of libraries as being called into question when he asks: What will a “publication” be in the future and don’t we need a new definition for it? What will “collection building” mean; isn’t it already obsolete? And finally: what is and will be worth collecting or preserving, and what is not? To the latter fundamental question, Ball emphasises, a decision will not only be required from libraries, but also on a broader societal level.</p><br>
+                            <p>Some crucial issues of publishing like the integration of multimedia have not been tackled in my presentation. But as Raffael Ball (2013) points out, there are much more fundamental challenges to publishing. As Ball elaborates, not just publishing but scholarly communication as a whole has changed fundamentally. He stresses two points in particular: the dissolution of the boundaries between informal and formal (ie published) scholarly communication, which have become a continuous process. To this I’d like to add that there are many different modes of consumption and dissemination of research today: interactive charts, linked data blogs, social media (including Facebook, LinkedIn, Academia.edu, and ReseachGate), visualisations and more.<a href="#sdendnote27sym" name="sdendnote27anc"><sup>15</sup></a> This doesn’t exactly facilitate the selection and aggregration of “relevant” materials, speaking from the perspective of libraries. The second point Ball stresses is the development from static to dynamic (or fluid) documents. Ball actually sees the traditional mission of libraries as being called into question when he asks: What will a “publication” be in the future and don’t we need a new definition for it? What will “collection building” mean; isn’t it already obsolete? And finally: what is and will be worth collecting or preserving, and what is not? To the latter fundamental question, Ball emphasises, a decision will not only be required from libraries, but also on a broader societal level.</p><br>
 
                             <p>Corinna Haas, Academic Librarian, ICI Berlin Institute for Cultural Inquiry</p>
 
@@ -394,68 +415,68 @@
                         <section id="footnotes03">
                             <h3>Notes:</h3>
 
-                            <div id="sdendnote9">
-                            <p><a href="#sdendnote9anc" name="sdendnote9sym">1</a> For a concise description of the publishing process and its transformation from the viewpoint of the library see Mittler 2012 (49-54)</p>
-                            </div>
-
-                            <div id="sdendnote10">
-                            <p><a href="#sdendnote10anc" name="sdendnote10sym">2</a> Many aspects of electronic publishing and the edoc services of HU Berlin are addressed in CMS-Journal 32, 2009, at <a href="http://linkme2.net/v9 ">http://linkme2.net/v9 </a></p>
-                            </div>
-
-                            <div id="sdendnote11">
-                            <p><a href="#sdendnote11anc" name="sdendnote11sym">3</a> <a href="http://edoc.hu-berlin.de/e_info/leitlinien.php">http://edoc.hu-berlin.de/e_info/leitlinien.php</a></p>
-                            </div>
-
-                            <div id="sdendnote12">
-                            <p><a href="#sdendnote12anc" name="sdendnote12sym">4</a> <a href="http://edoc.hu-berlin.de/e_info_en/oa-declaration.php">http://edoc.hu-berlin.de/e_info_en/oa-declaration.php</a></p>
-                            </div>
-
                             <div id="sdendnote13">
-                            <p><a href="#sdendnote13anc" name="sdendnote13sym">5</a> <a href="http://dini.de/english/">http://dini.de/english/</a></p>
+                            <p><a href="#sdendnote13anc" name="sdendnote13sym">1</a> For a concise description of the publishing process and its transformation from the viewpoint of the library see Mittler 2012 (49-54)</p>
                             </div>
 
                             <div id="sdendnote14">
-                            <p><a href="#sdendnote14anc" name="sdendnote14sym">6</a> <a href="https://www.coar-repositories.org/">https://www.coar-repositories.org/</a></p>
+                            <p><a href="#sdendnote14anc" name="sdendnote14sym">2</a> Many aspects of electronic publishing and the edoc services of HU Berlin are addressed in CMS-Journal 32, 2009, at <a href="http://linkme2.net/v9 ">http://linkme2.net/v9 </a></p>
                             </div>
 
                             <div id="sdendnote15">
-                            <p><a href="#sdendnote15anc" name="sdendnote15sym">7</a> <a href="http://www.ndltd.org/">http://www.ndltd.org/</a></p>
+                            <p><a href="#sdendnote15anc" name="sdendnote15sym">3</a> <a href="http://edoc.hu-berlin.de/e_info/leitlinien.php">http://edoc.hu-berlin.de/e_info/leitlinien.php</a></p>
                             </div>
 
                             <div id="sdendnote16">
-                            <p><a href="#sdendnote16anc" name="sdendnote16sym">8</a> <a href="https://www.openarchives.org/">https://www.openarchives.org/</a></p>
+                            <p><a href="#sdendnote16anc" name="sdendnote16sym">4</a> <a href="http://edoc.hu-berlin.de/e_info_en/oa-declaration.php">http://edoc.hu-berlin.de/e_info_en/oa-declaration.php</a></p>
                             </div>
 
                             <div id="sdendnote17">
-                            <p><a href="#sdendnote17anc" name="sdendnote17sym">9</a> <a href="http://edoc.hu-berlin.de/series/dini-schriften/2013-3-en/PDF/dini-zertifikat-2013-en.pdf">http://edoc.hu-berlin.de/series/dini-schriften/2013-3-en/PDF/dini-zertifikat-2013-en.pdf</a></p>
+                            <p><a href="#sdendnote17anc" name="sdendnote17sym">5</a> <a href="http://dini.de/english/">http://dini.de/english/</a></p>
                             </div>
 
                             <div id="sdendnote18">
-                            <p><a href="#sdendnote18anc" name="sdendnote18sym">10</a> The current version DINI Certificate 2013 Open Access Repositories and Publishing Services is available at <a href="http://dini.de/dini-zertifikat/english/">http://dini.de/dini-zertifikat/english/</a></p>
+                            <p><a href="#sdendnote18anc" name="sdendnote18sym">6</a> <a href="https://www.coar-repositories.org/">https://www.coar-repositories.org/</a></p>
                             </div>
 
                             <div id="sdendnote19">
-                            <p><a href="#sdendnote19anc" name="sdendnote19sym">11</a> Current examples for the DINI certification process can be found in presentations of library specialist conferences as Deutscher Bibliothekartag 2015; see, for instance: Markus Putnings (2015): DINI-Zertifikat @ OPUS FAU, or Signe Weihe (2015): DINI ready – Was bedeutet das?, at <a href="https://opus4.kobv.de/opus4-bib-info/solrsearch/index/search/searchtype/collection/id/16253">https://opus4.kobv.de/opus4-bib-info/solrsearch/index/search/searchtype/collection/id/16253</a></p>
+                            <p><a href="#sdendnote19anc" name="sdendnote19sym">7</a> <a href="http://www.ndltd.org/">http://www.ndltd.org/</a></p>
                             </div>
 
                             <div id="sdendnote20">
-                            <p><a href="#sdendnote20anc" name="sdendnote20sym">12</a> Certificate (2013), 28</p>
+                            <p><a href="#sdendnote20anc" name="sdendnote20sym">8</a> <a href="https://www.openarchives.org/">https://www.openarchives.org/</a></p>
                             </div>
 
                             <div id="sdendnote21">
-                            <p><a href="#sdendnote21anc" name="sdendnote21sym">13</a> A document type definition (DTD) is a set of markup declarations that define a document type for an SGML-family markup language (SGML, XML, HTML). A DTD defines the legal building blocks of an XML document, and the document structure with a list of legal elements and attributes.</p>
+                            <p><a href="#sdendnote21anc" name="sdendnote21sym">9</a> <a href="http://edoc.hu-berlin.de/series/dini-schriften/2013-3-en/PDF/dini-zertifikat-2013-en.pdf">http://edoc.hu-berlin.de/series/dini-schriften/2013-3-en/PDF/dini-zertifikat-2013-en.pdf</a></p>
+                            </div>
+
+                            <div id="sdendnote22">
+                            <p><a href="#sdendnote22anc" name="sdendnote22sym">10</a> The current version DINI Certificate 2013 Open Access Repositories and Publishing Services is available at <a href="http://dini.de/dini-zertifikat/english/">http://dini.de/dini-zertifikat/english/</a></p>
+                            </div>
+
+                            <div id="sdendnote23">
+                            <p><a href="#sdendnote23anc" name="sdendnote23sym">11</a> Current examples for the DINI certification process can be found in presentations of library specialist conferences as Deutscher Bibliothekartag 2015; see, for instance: Markus Putnings (2015): DINI-Zertifikat @ OPUS FAU, or Signe Weihe (2015): DINI ready – Was bedeutet das?, at <a href="https://opus4.kobv.de/opus4-bib-info/solrsearch/index/search/searchtype/collection/id/16253">https://opus4.kobv.de/opus4-bib-info/solrsearch/index/search/searchtype/collection/id/16253</a></p>
+                            </div>
+
+                            <div id="sdendnote24">
+                            <p><a href="#sdendnote24anc" name="sdendnote24sym">12</a> Certificate (2013), 28</p>
+                            </div>
+
+                            <div id="sdendnote25">
+                            <p><a href="#sdendnote25anc" name="sdendnote25sym">13</a> A document type definition (DTD) is a set of markup declarations that define a document type for an SGML-family markup language (SGML, XML, HTML). A DTD defines the legal building blocks of an XML document, and the document structure with a list of legal elements and attributes.</p>
 
                             <p>The Standard Generalized Markup Language (SGML; ISO 8879:1986) is for defining generalized markup languages for documents. – XML stands for Extensible Markup language.</p>
 
                             <p>XML defines a set of rules for encoding documents in a format that is both human-readable and machine-readable.</p>
                             </div>
 
-                            <div id="sdendnote22">
-                            <p><a href="#sdendnote22anc" name="sdendnote22sym">14</a> nestor <a href="http://www.langzeitarchivierung.de/">http://www.langzeitarchivierung.de/</a></p>
+                            <div id="sdendnote26">
+                            <p><a href="#sdendnote26anc" name="sdendnote26sym">14</a> nestor <a href="http://www.langzeitarchivierung.de/">http://www.langzeitarchivierung.de/</a></p>
                             </div>
 
-                            <div id="sdendnote23">
-                            <p><a href="#sdendnote23anc" name="sdendnote23sym">15</a> In May, 2015, the John Crear Library at the University of Chicago addressed The Changing Ecosystem of Scholarly Communication: <a href="http://www.lib.uchicago.edu/e/crerar/zar/">http://www.lib.uchicago.edu/e/crerar/zar/</a>. The workshop documentation is expected to go online in July 2015.</p>
+                            <div id="sdendnote27">
+                            <p><a href="#sdendnote27anc" name="sdendnote27sym">15</a> In May, 2015, the John Crear Library at the University of Chicago addressed The Changing Ecosystem of Scholarly Communication: <a href="http://www.lib.uchicago.edu/e/crerar/zar/">http://www.lib.uchicago.edu/e/crerar/zar/</a>. The workshop documentation is expected to go online in July 2015.</p>
                             </div>
 
                               </section>
@@ -472,27 +493,27 @@
 
                             <p>I began tinkering around with digital editions in 2009, for a school assignment. I was wondering to what extent an edition could be <em>augmented</em> or <em>diminished</em>, when digitally remediated. I tagged <em>20,000 Leagues Under the Sea</em>, word by word, to allow customizations of the text, by setting the level of detail or choosing which character to follow. I transformed books into coloured patterns. I made versions of novels where each word was replaced by found images, and photography books stripped of their pictures and reduced to bot-written descriptions. I generated texts or covers. And I investigated the EPUB format, as I was beginning to realize the intertwinings and entanglements between tools, texts, processes, formats, screens, encoding, material and standards.</p>
 
-                            <p>For my graduation internship in 2012 at <em>Subjectile<a href="#sdendnote24sym" name="sdendnote24anc"><sup>1</sup></a></em>, a paper/digital publisher, I was in charge of designing two digital collections and building the first volume. Four versions were needed: EPUB 2, EPUB 3, interactive PDF and Mobi. I had no idea what I was getting into.</p>
+                            <p>For my graduation internship in 2012 at <em>Subjectile<a href="#sdendnote28sym" name="sdendnote28anc"><sup>1</sup></a></em>, a paper/digital publisher, I was in charge of designing two digital collections and building the first volume. Four versions were needed: EPUB 2, EPUB 3, interactive PDF and Mobi. I had no idea what I was getting into.</p>
 
                             <p>As usual, I began with visual drafts of the layout. Once validated, I designed the interactive PDF version. Although it presented several challenges – how do we give a grasp of the document, as the spine, dimensions and weight did for printed books? Should we use a horizontal format, which seems to be better adapted to laptop screens? How may we rethink the table of contents? – it did not approach the difficulty of the EPUB version.</p>
 
-                            <p>EPUB is the open standard for digital books. Basically, it uses HTML and CSS, encapsulated with metadata and media. It defines an architecture of content. It is a highly resilient format, built upon solid web standards. Its current version is EPUB 3, which allows the inclusion of multimedia files as well as precise semantic description of content. But at the time, there were few comprehensive guides to the design of EPUBs. Documentation was lacking or difficult to understand. I also had to face a cruel lack of tools: InDesign would generate crappy files and Sigil<a href="#sdendnote25sym" name="sdendnote25anc"><sup>2</sup></a> was the only “native” EPUB software, but it would not support EPUB 3. You could use Calibre to generate your EPUB file on the basis of your HTML and CSS files, but it obfuscated the process, which made bug tracking difficult. Everybody was tinkering around, sharing informations on how the different e-reader devices or software interpreted this or that bit of code. The answer was that each one behaves differently so you have to test each individual scenario, which still remains the case. There was no tool to emulate the various readers, except for the Kindle Previewer<a href="#sdendnote26sym" name="sdendnote26anc"><sup>3</sup></a>, so you had to put your hands on a wide variety of devices, if you wanted to do your testing right. Commercial EPUBs quality was very low. On top of that, we also quickly realized that few people were inclined to install an EPUB file reader, when they weren't equipped with some sort of tablet. In short: EPUB design was a nightmare.</p>
+                            <p>EPUB is the open standard for digital books. Basically, it uses HTML and CSS, encapsulated with metadata and media. It defines an architecture of content. It is a highly resilient format, built upon solid web standards. Its current version is EPUB 3, which allows the inclusion of multimedia files as well as precise semantic description of content. But at the time, there were few comprehensive guides to the design of EPUBs. Documentation was lacking or difficult to understand. I also had to face a cruel lack of tools: InDesign would generate crappy files and Sigil<a href="#sdendnote29sym" name="sdendnote29anc"><sup>2</sup></a> was the only “native” EPUB software, but it would not support EPUB 3. You could use Calibre to generate your EPUB file on the basis of your HTML and CSS files, but it obfuscated the process, which made bug tracking difficult. Everybody was tinkering around, sharing informations on how the different e-reader devices or software interpreted this or that bit of code. The answer was that each one behaves differently so you have to test each individual scenario, which still remains the case. There was no tool to emulate the various readers, except for the Kindle Previewer<a href="#sdendnote30sym" name="sdendnote30anc"><sup>3</sup></a>, so you had to put your hands on a wide variety of devices, if you wanted to do your testing right. Commercial EPUBs quality was very low. On top of that, we also quickly realized that few people were inclined to install an EPUB file reader, when they weren't equipped with some sort of tablet. In short: EPUB design was a nightmare.</p>
 
                             <p>Actually, it still is. Because there is no tool(s), and especially no open source tool(s), able to facilitate or accompany the whole design process of digital editions.</p>
 
-                            <p>But EPUB also has its virtues. Because it has to <em>take in charge</em> an immense variety of technical apparatus (e-ink readers, tablets, phones, laptops, every software that might be used to open it and users personal reading parameters), it defines a truly hybrid book. I saw designers trying to avoid the problem by designing for iBooks<a href="#sdendnote27sym" name="sdendnote27anc"><sup>4</sup></a> only, or by designing fixed layout books. My take on the issue is different. I've been wondering how to make the most of the materials at hand. When possibilities are so restrained, what is left to designers? How do you design with this rough <em>aesthetic of standards</em> in mind?</p>
+                            <p>But EPUB also has its virtues. Because it has to <em>take in charge</em> an immense variety of technical apparatus (e-ink readers, tablets, phones, laptops, every software that might be used to open it and users personal reading parameters), it defines a truly hybrid book. I saw designers trying to avoid the problem by designing for iBooks<a href="#sdendnote31sym" name="sdendnote31anc"><sup>4</sup></a> only, or by designing fixed layout books. My take on the issue is different. I've been wondering how to make the most of the materials at hand. When possibilities are so restrained, what is left to designers? How do you design with this rough <em>aesthetic of standards</em> in mind?</p>
 
-                            <p>EPUB strips design to its bare bones. EPUB design is, first and almost only, a matter of structure. A structure that “designates”<a href="#sdendnote28sym" name="sdendnote28anc"><sup>5</sup></a> its contents. A structure based on printed books, now flexibly displayed. A structure that switched from a paradigm of page to a paradigm of block. A structure that takes into account and accepts the reading experience will be completely different between one screen and another. A structure that should provide the best experience for all. A structure allowing for various remediation of contents, relying on the possibilities of the display.</p>
+                            <p>EPUB strips design to its bare bones. EPUB design is, first and almost only, a matter of structure. A structure that “designates”<a href="#sdendnote32sym" name="sdendnote32anc"><sup>5</sup></a> its contents. A structure based on printed books, now flexibly displayed. A structure that switched from a paradigm of page to a paradigm of block. A structure that takes into account and accepts the reading experience will be completely different between one screen and another. A structure that should provide the best experience for all. A structure allowing for various remediation of contents, relying on the possibilities of the display.</p>
 
                             <p>I believe this structure is what defines EPUB aesthetic. It may mean poor typefaces, terrible kerning or out-of-control word spacing. It is often far from offering a great reading experience. But the standard itself is beautiful: lightweight, accessible, resilient and adaptable.</p>
 
-                            <p>Where it has failed, though, is in giving birth to communities of practice. Most EPUBs are generated without correct prepping from PDF, HTML or Word files. Not many designers establish a correct structure for their digital editions. Few play with the constraints of devices' display – for example, sections that may appear only in certain cases, or the visual display of hyperlink URLs which may not be accessible on the same device as the book. Rare are people proposing a real remediation of video or audio files on e-ink readers, or exploring what those could be. But to be fair, as long as EPUB rendering is clumsy, as long as the most basic HTML elements and CSS rules are not correctly displayed by the various EPUB reading softwares, as long as the major publishers won't agree upon the standard for “the required or agreed level of quality or attainment<a href="#sdendnote29sym" name="sdendnote29anc"><sup>6</sup></a>,” I don't expect to see that situation change.</p>
+                            <p>Where it has failed, though, is in giving birth to communities of practice. Most EPUBs are generated without correct prepping from PDF, HTML or Word files. Not many designers establish a correct structure for their digital editions. Few play with the constraints of devices' display – for example, sections that may appear only in certain cases, or the visual display of hyperlink URLs which may not be accessible on the same device as the book. Rare are people proposing a real remediation of video or audio files on e-ink readers, or exploring what those could be. But to be fair, as long as EPUB rendering is clumsy, as long as the most basic HTML elements and CSS rules are not correctly displayed by the various EPUB reading softwares, as long as the major publishers won't agree upon the standard for “the required or agreed level of quality or attainment<a href="#sdendnote33sym" name="sdendnote33anc"><sup>6</sup></a>,” I don't expect to see that situation change.</p>
 
-                            <p>There is so much EPUB can learn from the history of the Web, its cousin. Just like the Web aesthetic was oscillating between Flash and pure default semantic layouts for a long time, digital editions are oscillating between pure structure and unthoughtful app design. We could say that they haven't found their authentic form<a href="#sdendnote30sym" name="sdendnote30anc"><sup>7</sup></a> yet. So ... keep it simple. Focus on the specificity of the medium. Invest in the community. Propose frameworks. Build your own tools.</p>
+                            <p>There is so much EPUB can learn from the history of the Web, its cousin. Just like the Web aesthetic was oscillating between Flash and pure default semantic layouts for a long time, digital editions are oscillating between pure structure and unthoughtful app design. We could say that they haven't found their authentic form<a href="#sdendnote34sym" name="sdendnote34anc"><sup>7</sup></a> yet. So ... keep it simple. Focus on the specificity of the medium. Invest in the community. Propose frameworks. Build your own tools.</p>
 
                             <p>As a designer, I certainly dream of an electronic tool. A tool that would allow forms of writings specific to multiform digital documents. A tool that would allow for digital editions to live in various formats, designs and screens. A tool focusing on structure, both at the level of the document (blocks and their relationships) and at the level of the content (bricks of content, described and hierarchized). A tool that would produce resilient digital editions, lasting more than the few years of life of softwares or OS. Editions that could be apps, websites, EPUBs, PDFs, or even generic XML files. Designs that wouldn't hide their relationships to their medium by simulating paper textures, but would invent new forms of interactions.</p>
 
-                            <p>That tool would need to simulate various devices, and to provide basic structures and style sheets. Edition structure could be visualized as graphs, much like as on Twine<a href="#sdendnote31sym" name="sdendnote31anc"><sup>8</sup></a>. Every brick of this structure could be described by additional metadata, compatible with XML. The content should first be made of structured text, but you could insert multimedia or interactive blocks. You could set up alternative content for the different types of export. The structure “first-rank” elements (such as chapters) should be used to define how to break down the content, defining a switch between a page and another. Bricks should be defined by a link, which could be used in an interactive table of contents.</p>
+                            <p>That tool would need to simulate various devices, and to provide basic structures and style sheets. Edition structure could be visualized as graphs, much like as on Twine<a href="#sdendnote35sym" name="sdendnote35anc"><sup>8</sup></a>. Every brick of this structure could be described by additional metadata, compatible with XML. The content should first be made of structured text, but you could insert multimedia or interactive blocks. You could set up alternative content for the different types of export. The structure “first-rank” elements (such as chapters) should be used to define how to break down the content, defining a switch between a page and another. Bricks should be defined by a link, which could be used in an interactive table of contents.</p>
 
                             <p>As the content would be completely structured, the style sheets would only need to describe the properties of every type of brick, depending on the format of export. One could use an existing CSS template, or customize it through a form. There should also be blank files listing every elements to be styled. Of course, this is only one of the approaches that could be taken to the design of digital editions. But we do need to think about the design of tools and tools for design, exploring how standards, aesthetic and publication processes intertwine, to envisage what digital editions actually are, and what they may become.</p><br>
 
@@ -505,36 +526,36 @@
                         <section id="footnotes04">
                             <h3>Notes:</h3>
 
-                            <div id="sdendnote24">
-                            <p><a href="#sdendnote24anc" name="sdendnote24sym">1</a> <a href="http://subjectile.com/">http://subjectile.com</a></p>
-                            </div>
-
-                            <div id="sdendnote25">
-                            <p><a href="#sdendnote25anc" name="sdendnote25sym">2</a> Sigil is an open source epub editor software.</p>
-                            </div>
-
-                            <div id="sdendnote26">
-                            <p><a href="#sdendnote26anc" name="sdendnote26sym">3</a> Kindle previewer allows for the conversion of EPUB into Mobi files, and to check how they display on the various Kindle tablets and apps.</p>
-                            </div>
-
-                            <div id="sdendnote27">
-                            <p><a href="#sdendnote27anc" name="sdendnote27sym">4</a> iBooks is Apple default EPUB reading app.</p>
-                            </div>
-
                             <div id="sdendnote28">
-                            <p><a href="#sdendnote28anc" name="sdendnote28sym">5</a> Design comes from the Latin <em>designare</em>, to put a mark/a sign on something.</p>
+                            <p><a href="#sdendnote28anc" name="sdendnote28sym">1</a> <a href="http://subjectile.com/">http://subjectile.com</a></p>
                             </div>
 
                             <div id="sdendnote29">
-                            <p><a href="#sdendnote29anc" name="sdendnote29sym">6</a> Yes, Amazon, I'm particularly thinking about you and your horrendous reading apps.</p>
+                            <p><a href="#sdendnote29anc" name="sdendnote29sym">2</a> Sigil is an open source epub editor software.</p>
                             </div>
 
                             <div id="sdendnote30">
-                            <p><a href="#sdendnote30anc" name="sdendnote30sym">7</a> Following Walter Benjamin's <em>A Short History of Photography</em>, 1931.</p>
+                            <p><a href="#sdendnote30anc" name="sdendnote30sym">3</a> Kindle previewer allows for the conversion of EPUB into Mobi files, and to check how they display on the various Kindle tablets and apps.</p>
                             </div>
 
                             <div id="sdendnote31">
-                            <p><a href="#sdendnote31anc" name="sdendnote31sym">8</a> Twine is an open-source tool for telling interactive, nonlinear stories. <a href="http://twinery.org/">http://twinery.org</a></p>
+                            <p><a href="#sdendnote31anc" name="sdendnote31sym">4</a> iBooks is Apple default EPUB reading app.</p>
+                            </div>
+
+                            <div id="sdendnote32">
+                            <p><a href="#sdendnote32anc" name="sdendnote32sym">5</a> Design comes from the Latin <em>designare</em>, to put a mark/a sign on something.</p>
+                            </div>
+
+                            <div id="sdendnote33">
+                            <p><a href="#sdendnote33anc" name="sdendnote33sym">6</a> Yes, Amazon, I'm particularly thinking about you and your horrendous reading apps.</p>
+                            </div>
+
+                            <div id="sdendnote34">
+                            <p><a href="#sdendnote34anc" name="sdendnote34sym">7</a> Following Walter Benjamin's <em>A Short History of Photography</em>, 1931.</p>
+                            </div>
+
+                            <div id="sdendnote35">
+                            <p><a href="#sdendnote35anc" name="sdendnote35sym">8</a> Twine is an open-source tool for telling interactive, nonlinear stories. <a href="http://twinery.org/">http://twinery.org</a></p>
                             </div>
 
                                       </section>
@@ -550,7 +571,7 @@
 
                             <p>Visiting <a href="http://www.ttypp.nl/arch/">www.ttypp.nl/arch/</a> is a time machine. This is where the Web pages of TYP/Typografisch papier are archived. TYP was a forward thinking magazine initiated by Dutch graphic designer Max Kisman which was published on paper, on floppy disks and online. Surfing through the online editions, one is transported twenty years back, to a period the World Wide Web had only just begun to arrive on people’s computers. The enthusiasm displayed by designers looking for ways to exploit the new medium is contagious. On the transient space of the Internet, it seems like a small miracle that this cultural moment is still accessible.</p>
 
-                            <p>Surfing around websites from the nineties on the Internet Archive, one notices that quite a few do not display anymore, among which are many sites that use technologies like Shockwave or Flash. Websites using HTML tags, the native tongue of the browser, have generally aged much better. This is no accident: backwards compatibility has always been important for web browser vendors. Since browser vendors have so little control over the markup people write, browsers are very forgiving about the markup. Within HTML5, this tradition has been codified, as the parsing of malformed or non-conforming HTML has been standardised.<sup><a href="#sdendnote32sym" name="sdendnote32anc"><sup>1</sup></a></sup></p>
+                            <p>Surfing around websites from the nineties on the Internet Archive, one notices that quite a few do not display anymore, among which are many sites that use technologies like Shockwave or Flash. Websites using HTML tags, the native tongue of the browser, have generally aged much better. This is no accident: backwards compatibility has always been important for web browser vendors. Since browser vendors have so little control over the markup people write, browsers are very forgiving about the markup. Within HTML5, this tradition has been codified, as the parsing of malformed or non-conforming HTML has been standardised.<sup><a href="#sdendnote36sym" name="sdendnote36anc"><sup>1</sup></a></sup></p>
 
                             <p>In recent years there has been a return to creating solutions built on static HTML files. This is because hosting HTML files is easier, cheaper and more secure than hosting a dynamic system. Since the website does not need to store information in a database, the ‘attack surface’ of a website hosting static files is much smaller. The website does not need to expose an editing interface that can be hacked. Also, a dynamic system will be have to kept up to date to fix known security holes. No such maintenance is needed for the HTML files: and because they do not use any specific capacities of the server, the cheapest hosting solution will generally suffice.</p>
 
@@ -566,9 +587,9 @@
 
                             <p>This is a pressing issue in digital publishing. Whereas traditional publishing workflows are often built around bespoke XML formats, a new generation of technologists is discovering the flexibility of re-purposing web technologies for creating hybrid publications: available as websites, EPUBs and printable PDFs. Currently, many parties make their own database driven solutions. The design will be encoded in a custom template format. The text will be encoded in a custom markup format — often based on Markdown, but never exactly the same. This makes it very hard for third-party service providers to interact with these systems, which means it is harder for an economy to form around digital publishing.</p>
 
-                            <p>There are counter examples. Atlas, the platform for creating technical publications created by the American publisher O’Reilly, goes a long way in basing a workflow on <em>De facto</em> standards. The source is a series of HTML files, stored in a Git repository.<sup><a href="#sdendnote33sym" name="sdendnote33anc"><sup>2</sup></a></sup> Atlas proposes a visual editor for the HTML, and a review and editing workflow that is built on top of Git’s built-in capacity to split and merge parallel versions of files (branches). Because their solution is built upon Git and the file system, one can use any other program to deal with the HTML files. The only downside to Atlas’ approach is that it deals with snippets of HTML, rather than complete files. These files will not display correctly by themselves and they will not validate unless one wraps them in some boilerplate code.</p>
+                            <p>There are counter examples. Atlas, the platform for creating technical publications created by the American publisher O’Reilly, goes a long way in basing a workflow on <em>De facto</em> standards. The source is a series of HTML files, stored in a Git repository.<sup><a href="#sdendnote37sym" name="sdendnote37anc"><sup>2</sup></a></sup> Atlas proposes a visual editor for the HTML, and a review and editing workflow that is built on top of Git’s built-in capacity to split and merge parallel versions of files (branches). Because their solution is built upon Git and the file system, one can use any other program to deal with the HTML files. The only downside to Atlas’ approach is that it deals with snippets of HTML, rather than complete files. These files will not display correctly by themselves and they will not validate unless one wraps them in some boilerplate code.</p>
 
-                            <p>Another interesting product is the OERPUB Textbook Editor, which has the advantage of being fully Open Source. It embraces the EPUB standard. In most workflows, EPUBs are generated artifacts, but in this case they are the source. This makes sense, since at the basis EPUBs are collections of XHTML5 files with a mandatory set of metadata.<sup><a href="#sdendnote34sym" name="sdendnote34anc"><sup>3</sup></a></sup> This means that EPUBs as a source format combine the expressiveness of HTML with some of the rigour demanded by conventional publishing workflows. The OERPUB editor requires an EPUB to be stored in a Git repository, available on GitHub. The editor reads in the EPUB and is allowed to edit the text with a WYSIWYG editor, create chapters and sections and edit metadata. Because the file structure is fully standard, existing tools like the IDPF EpubCheck validation software can easily be used alongside the tool.</p>
+                            <p>Another interesting product is the OERPUB Textbook Editor, which has the advantage of being fully Open Source. It embraces the EPUB standard. In most workflows, EPUBs are generated artifacts, but in this case they are the source. This makes sense, since at the basis EPUBs are collections of XHTML5 files with a mandatory set of metadata.<sup><a href="#sdendnote38sym" name="sdendnote38anc"><sup>3</sup></a></sup> This means that EPUBs as a source format combine the expressiveness of HTML with some of the rigour demanded by conventional publishing workflows. The OERPUB editor requires an EPUB to be stored in a Git repository, available on GitHub. The editor reads in the EPUB and is allowed to edit the text with a WYSIWYG editor, create chapters and sections and edit metadata. Because the file structure is fully standard, existing tools like the IDPF EpubCheck validation software can easily be used alongside the tool.</p>
 
                             <p>A decoupling of tool and content can be beneficial for the ecosystem of digital publishing. Having the content stored in a more standardised way allows tools to be more specialised. This has multiple advantages. First, standardisation will make it easier for newcomers to navigate inbetween projects, lowering the bar to entry and making it easier for a more diverse set of practitioners to enter a field that currently seems technocratic. At the same time, tools can become more specialised, allowing for the more rapid development of new tools in specific areas, and allowing experienced practitioners to focus on one particular aspect of the craft of digital publishing and thus progress the status quo in that area. Freed from the obligation to provide a monolithic solution that handles publishing from start to finish, service providers will be able to concentrate on that part of the chain where they see their maximum potential added value.</p>
 
@@ -586,16 +607,16 @@
             <section id="footnotes">
                 <h3>Notes:</h3>
 
-                <div id="sdendnote32">
-                <p><a href="#sdendnote32anc" name="sdendnote32sym">1</a> Some misplaced puritanism has caused HTML standards writers and browser vendors to remove the blink tag. This might have to do with a narrative in which Geocities-style, amateur driven webdesign had created a chaos from which we all had to be saved by standards loving professionals — in this sense, the blink tag becomes a <em>pars pro toto</em> for an approach to webdesign built on Comic Sans and MIDI files, that the ‘professional’ web users suspect they can kill off by sacrificing &lt;blink&gt;. But it stands as a curious omission in what has basically been a technology that has been remarkably caring for its past.</p>
+                <div id="sdendnote36">
+                <p><a href="#sdendnote36anc" name="sdendnote36sym">1</a> Some misplaced puritanism has caused HTML standards writers and browser vendors to remove the blink tag. This might have to do with a narrative in which Geocities-style, amateur driven webdesign had created a chaos from which we all had to be saved by standards loving professionals — in this sense, the blink tag becomes a <em>pars pro toto</em> for an approach to webdesign built on Comic Sans and MIDI files, that the ‘professional’ web users suspect they can kill off by sacrificing &lt;blink&gt;. But it stands as a curious omission in what has basically been a technology that has been remarkably caring for its past.</p>
                 </div>
 
-                <div id="sdendnote33">
-                <p><a href="#sdendnote33anc" name="sdendnote33sym">2</a> Git is a software to deal with multiple versions of files. Git tracks the versions and allows users to merge their changed files. Initially available only as a command line utility, it is starting to be built into content creation tools.</p>
+                <div id="sdendnote37">
+                <p><a href="#sdendnote37anc" name="sdendnote37sym">2</a> Git is a software to deal with multiple versions of files. Git tracks the versions and allows users to merge their changed files. Initially available only as a command line utility, it is starting to be built into content creation tools.</p>
                 </div>
 
-                <div id="sdendnote34">
-                <p><a href="#sdendnote34anc" name="sdendnote34sym">3</a> XHTML5 is HTML5, with additional restrictions to make sure the HTML is also valid XML. XML is a more generic standard for markup languages. This makes it possible to re-use tools developed for XML with the HTML.</p>
+                <div id="sdendnote38">
+                <p><a href="#sdendnote38anc" name="sdendnote38sym">3</a> XHTML5 is HTML5, with additional restrictions to make sure the HTML is also valid XML. XML is a more generic standard for markup languages. This makes it possible to re-use tools developed for XML with the HTML.</p>
                 </div>
 
             </section>
