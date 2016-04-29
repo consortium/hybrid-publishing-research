@@ -88,6 +88,19 @@ module.exports = function(grunt) {
                 dest: 'tmp/main_tmp.css'
             }
         },
+
+
+	coveralls: {
+		options: {
+			force: false
+		},
+
+		hundered: {
+			src: 'coverage-results/extra-results-*.info',
+			options: {
+			}
+		},
+	},
         
         cssmin: {
             options: {
@@ -267,6 +280,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks( 'grunt-contrib-jshint' );
     grunt.loadNpmTasks( 'grunt-contrib-uglify' );
     grunt.loadNpmTasks( 'grunt-contrib-watch' );
+    grunt.loadNpmTasks( 'grunt-coveralls' );
     grunt.loadNpmTasks( 'grunt-w3c-html-validation' );
     grunt.loadNpmTasks( 'grunt-execute' );
     grunt.loadNpmTasks( 'grunt-metaparser' );
