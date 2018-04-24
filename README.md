@@ -2,7 +2,7 @@
 
 [![Join the chat at https://gitter.im/consortium/hybrid-publishing-research](https://badges.gitter.im/consortium/hybrid-publishing-research.svg)](https://gitter.im/consortium/hybrid-publishing-research?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Build Status](https://travis-ci.org/consortium/hybrid-publishing-research.svg?branch=master)](https://travis-ci.org/consortium/hybrid-publishing-research)
-[![Dependency Status](https://david-dm.org/consortium/hybrid-publishing-research.svg)](https://david-dm.org/consortium/hybrid-publishing-research)[![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.19048.svg)](http://dx.doi.org/10.5281/zenodo.19048)
+[![Dependency Status](https://david-dm.org/consortium/hybrid-publishing-research.svg)](https://david-dm.org/consortium/hybrid-publishing-research)[![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.19048.svg)](https://doi.org/10.5281/zenodo.19048)
 [![Coverage Status](https://coveralls.io/repos/github/consortium/hybrid-publishing-research/badge.svg?branch=master)](https://coveralls.io/github/consortium/hybrid-publishing-research?branch=master)
 
 This repository is the document collection of the consortium.io. It’s compiled in a redistributable way.
