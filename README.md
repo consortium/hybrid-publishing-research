@@ -74,9 +74,9 @@ You need administrative access to install npm packages globally, so it will ask 
 
 (if you have error messages, saying you don’t have the right to access, go to the [troubleshouting](#troubleshouting) section)
 
-All packages will automatically be installed in the folder `/node_modules`. With all the node packages installed, all you need now is to install all the front-end libraries that are used in the browser. In order to do this, **use grunt to load all libraries and generate all needed files**. 
+All packages will automatically be installed in the folder `./node_modules`. With all the node packages installed, all you need now is to install all the front-end libraries that are used in the browser. In order to do this, **use grunt to load all libraries and generate all needed files**. 
 Grunt will do three things:
-* Grunt upadtes the packages, prepares and installs the front-end libraries (makes one small file out of the different stylesheets and javascripts files).
+* Grunt updates the packages, prepares and installs the front-end libraries (makes one small file out of the different stylesheets and javascripts files).
 * Grunt validates the files
 * Grunt runs the metaparser to get all the metadata and the datas into one file, it generates the index.html.
 Type the following command:
